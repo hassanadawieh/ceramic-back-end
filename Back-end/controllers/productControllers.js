@@ -13,7 +13,7 @@ export async function getAll(req, res, next) {
     // Paginate items using mongoose-paginate-v2
     const options = {
       page: pageNumber || 1,
-      limit: limitNumber || 10,
+      limit: limitNumber || 8,
     };
 
     const items = await Product.paginate({}, options);
